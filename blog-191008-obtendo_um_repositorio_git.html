@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="icon" href="m_claro.png" type="image/x-icon">
-        <title>Início - RafaMarqS</title>
+        <title>Obtendo um repositório Git - RafaMarqS</title>
 
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -44,38 +44,51 @@
         </nav>
 
         <div class="conteudo">
-            <div class="list-group">
-    <a href="blog-191008-obtendo_um_repositorio_git.html" class="list-group-item list-group-item-action">
-        19.10.08 - Obtendo um repositorio Git
-    </a>
-    <a href="blog-191002-configuracao_inicial_do_git.html" class="list-group-item list-group-item-action">
-        19.09.26 - Configuração inicial do Git
-    </a>
-    <a href="blog-190929-instalando_o_git.html" class="list-group-item list-group-item-action">
-        19.09.29 - Instalando o Git
-    </a>
-    <a href="blog-190926-como_escolher_um_computador.html" class="list-group-item list-group-item-action">
-        19.09.26 - Como escolher um computador?
-    </a>
-    <a href="blog-190922-controle_de_versao.html" class="list-group-item list-group-item-action">
-        19.09.22 - Controle de Versão
-    </a>
-    <a href="blog-190919-voltei.html" class="list-group-item list-group-item-action">
-        19.09.19 - Voltei
-    </a>
-    <a href="blog-190721-escolhendo_a_suite_de_aplicativos.html" class="list-group-item list-group-item-action">
-        19.07.21 - Escolhendo a suíte de aplicativos
-    </a>
-    <a href="blog-190714-ja_escolheu_um_sistema_operacional.html" class="list-group-item list-group-item-action">
-        19.07.14 - Já escolheu um sistema operacional?
-    </a>
-    <a href="blog-190710-metade_de_2019_ja_foi.html" class="list-group-item list-group-item-action">
-        19.07.10 - Metade de 2019 já foi
-    </a>
-    <a href="blog-190611-apresentacao.html" class="list-group-item list-group-item-action">
-        19.06.11 - Apresentação
-    </a>
-</div>
+            <h1 id="obtendo-um-repositório-git">Obtendo um repositório Git</h1>
+
+<p>19.10.08</p>
+
+<p>Chegou o momento de ter um repositório Git, podemos fazer isso facilmente de duas formas. Podemos iniciar um repositório, preparando nossos arquivos. Podemos também clonar um repositório que existe em outro lugar.</p>
+
+<h2 id="iniciando-um-repositório-git">Iniciando um repositório Git</h2>
+
+<p>Se você já tem algum diretório (pasta) que quer ter um controle de versão, primeiro precisamos ir até esse diretório. Dentro dessa pasta podemos clicar com o botão direito e abrir o Git Bash ou o Terminal.</p>
+
+<p>E digite:</p>
+
+<p>git init</p>
+
+<p>Pronto! Iniciamos um repositório Git, mas calma, ainda não está sendo rastreado. Para começar precisamos adicionar os arquivos que queremos, como estamos começando, vamos adicionar todos.</p>
+
+<p>Digite:</p>
+
+<p>git add *</p>
+
+<p>isso adiciona todos os arquivos na area de preparação do Git, ainda precisamos fazer um um commit que é adicionar os arquivos no formato em que estão na area de preparação.</p>
+
+<p>Digite:</p>
+
+<p>git commit -m ‘iniciando controle de versão’</p>
+
+<p>Pronto! Já temos tudo o que precisamos até o momento.</p>
+
+<h2 id="clonando-um-repositório-git">Clonando um repositório Git</h2>
+
+<p>Podemos obter uma cópia completa de um repositório Git que existe em outro lugar.</p>
+
+<p>Por ser uma cópia completa, é possível que a sua cópia possa depois servir como cópia de segurança e ser usada para recuperar os dados caso aconteça algum problema no servidor.</p>
+
+<p>Para clonar usamos o comando git clone, vamos começar com um repositório bem popular, o bootstrap, que é um framework web</p>
+
+<p>Vá para o diretório onde deseja que esse repositório esteja.</p>
+
+<p>Digite:</p>
+
+<p>git clone https://github.com/twbs/bootstrap.git</p>
+
+<p>Agora você possui um repositório completo do bootstrap.</p>
+
+<p>Eu sou RafaMarqS… Até a próxima.</p>
 
         </div>
 
