@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="icon" href="m_claro.png" type="image/x-icon">
-        <title>Início - RafaMarqS</title>
+        <title>Tags - RafaMarqS</title>
 
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -47,44 +47,45 @@
         </nav>
 
         <div class="conteudo">
-            <div class="list-group">
-    <a href="blog-controle_de_versao.html" class="list-group-item list-group-item-action">
-        Git - Controle de Versão
-    </a>
-    <a href="blog-instalando_o_git.html" class="list-group-item list-group-item-action">
-        Git - Instalando
-    </a>
-    <a href="blog-configuracao_inicial_do_git.html" class="list-group-item list-group-item-action">
-        Git - Configuração inicial
-    </a>
-    <a href="blog-obtendo_um_repositorio_git.html" class="list-group-item list-group-item-action">
-        Git - Obtendo um repositorio
-    </a>
-    <a href="blog-fazendo_alteracoes_no_repositorio.html" class="list-group-item list-group-item-action">
-        Git - Fazendo alterações no repositorio
-    </a>
-    <a href="blog-historico_de_commits.html" class="list-group-item list-group-item-action">
-        Git - Histórico de commits
-    </a>
-    <a href="blog-desfazendo_algo.html" class="list-group-item list-group-item-action">
-        Git - Desfazendo algo
-    </a>
-    <a href="blog-commit_com_quase_todos_os_arquivos.html" class="list-group-item list-group-item-action">
-        Git - Commit com quase todos os arquivos
-    </a>
-    <a href="blog-desfazendo_modificacoes_no_arquivo.html" class="list-group-item list-group-item-action">
-        Git - Desfazendo modificações no arquivo
-    </a>
-    <a href="blog-tags.html" class="list-group-item list-group-item-action">
-        Git - Tags
-    </a>
-    <a href="blog-ramos.html" class="list-group-item list-group-item-action">
-        Git - Ramos
-    </a>
-    <a href="blog-ramificacao_e_mesclagem.html" class="list-group-item list-group-item-action">
-        Git - Ramificação e mesclagem
-    </a>
-</div>
+            <h1 id="tags">Tags</h1>
+
+<p>Ultima publicação do ano de 2019 com algo bem legal que é identificar algum ponto especifico do repositório com uma tag. É claro que em algum momento você precisa colocar uma numeração do seu código, como a versão v1 e depois v1.1 e etc.</p>
+
+<p>O comando é:
+git tag</p>
+
+<p>Apenas no formato acima, esse comando mostra todas as tags já criadas.</p>
+
+<h2 id="tipos">Tipos</h2>
+
+<p>Antes de criarmos uma tag temos que conhecer as duas opções de tags: lightweight ou annotated.
+Uma tag  lightweight é só uma identificação simples em um commit.
+A tag annotated tem muito mais opções como nome, e-mail, data, mensagem…</p>
+
+<h2 id="tag-lightweight">Tag lightweight</h2>
+
+<p>De forma simples essa tag é uma soma de verificação do commit.
+Use apenas o comando:
+git tag v0.1</p>
+
+<p>Veja o resultado dessa tag usando:
+git tag show v0.1</p>
+
+<h2 id="tag-annotated">Tag annotated</h2>
+
+<p>Essa tag tem mais informações.
+Use o comando:
+git tag -a v1.0 -m ‘mensagem’</p>
+
+<p>Veja o resultado dessa tag usando:
+git tag show v0.1</p>
+
+<h2 id="deletar-uma-tag">Deletar uma tag</h2>
+
+<p>Se precisa deletar a tag use a opção -d, o comando fica assim:
+git tag -d v0.1</p>
+
+<p>Eu sou RafaMarqS… Até a próxima.</p>
 
         </div>
 

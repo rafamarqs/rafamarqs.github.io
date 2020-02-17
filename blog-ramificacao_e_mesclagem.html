@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="icon" href="m_claro.png" type="image/x-icon">
-        <title>Início - RafaMarqS</title>
+        <title>Ramificação e mesclagem - RafaMarqS</title>
 
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -47,44 +47,34 @@
         </nav>
 
         <div class="conteudo">
-            <div class="list-group">
-    <a href="blog-controle_de_versao.html" class="list-group-item list-group-item-action">
-        Git - Controle de Versão
-    </a>
-    <a href="blog-instalando_o_git.html" class="list-group-item list-group-item-action">
-        Git - Instalando
-    </a>
-    <a href="blog-configuracao_inicial_do_git.html" class="list-group-item list-group-item-action">
-        Git - Configuração inicial
-    </a>
-    <a href="blog-obtendo_um_repositorio_git.html" class="list-group-item list-group-item-action">
-        Git - Obtendo um repositorio
-    </a>
-    <a href="blog-fazendo_alteracoes_no_repositorio.html" class="list-group-item list-group-item-action">
-        Git - Fazendo alterações no repositorio
-    </a>
-    <a href="blog-historico_de_commits.html" class="list-group-item list-group-item-action">
-        Git - Histórico de commits
-    </a>
-    <a href="blog-desfazendo_algo.html" class="list-group-item list-group-item-action">
-        Git - Desfazendo algo
-    </a>
-    <a href="blog-commit_com_quase_todos_os_arquivos.html" class="list-group-item list-group-item-action">
-        Git - Commit com quase todos os arquivos
-    </a>
-    <a href="blog-desfazendo_modificacoes_no_arquivo.html" class="list-group-item list-group-item-action">
-        Git - Desfazendo modificações no arquivo
-    </a>
-    <a href="blog-tags.html" class="list-group-item list-group-item-action">
-        Git - Tags
-    </a>
-    <a href="blog-ramos.html" class="list-group-item list-group-item-action">
-        Git - Ramos
-    </a>
-    <a href="blog-ramificacao_e_mesclagem.html" class="list-group-item list-group-item-action">
-        Git - Ramificação e mesclagem
-    </a>
-</div>
+            <h1 id="ramificação-e-mesclagem">Ramificação e mesclagem</h1>
+
+<p>Imagine ter um repositório, já tendo algumas confirmações, você cria um novo ramo e faz confirmações nesse novo ramo. Aí você volta ao ramo inicial e cria um novo ramo a partir desse e faz algumas confirmações. Agora temos duas ramificações que precisam se tornar uma novamente.</p>
+
+<p>Até o momento você deve saber como executar essas etapas seguindo as publicações anteriores.
+Vamos fazer uma mesclagem e para isso precisamos estar no no ramo que irá receber os arquivos para mesclagem.</p>
+
+<p>git checkout master</p>
+
+<p>e o comando de mesclage é simples:</p>
+
+<p>git merge nomeDoRamo</p>
+
+<p>agora faça a confirmação.</p>
+
+<p>Já que não precisamos mais do ramos que foi mesclado, vamos excluir:</p>
+
+<p>git branch -d nomeDoRamo</p>
+
+<p>Agora vamos fazer com o outro ramo, lembrando que agora o ramo principal já tem confirmações que não estão no outro ramo, diferente do primeiro caso.</p>
+
+<p>Faça os mesmos passos feitos antes.</p>
+
+<p>É possível que aconteça de existir modificações no mesmo lugar nas duas ramificações e isso quer dizer que não é só adicionar o novo conteúdo mas que é necessário escolher qual irá ser usado.</p>
+
+<p>Se esse for o caso o git irá mostrar quais arquivos precisam ser vistos e ao abrir esses arquivos verá uma marcação mostrando as versões que existem. É possível até apagar as duas e fazer uma totalmente nova e confirmar.</p>
+
+<p>Eu sou RafaMarqS… Até a próxima.</p>
 
         </div>
 

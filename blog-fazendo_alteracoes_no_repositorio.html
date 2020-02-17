@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="m_claro.png" type="image/x-icon">
+        <title>Fazendo alterações no repositório - RafaMarqS</title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148437173-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-148437173-1');
+        </script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="/">
+                <img src="m_escuro.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                RafaMarqS
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="curriculo.html">Currículo</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="conteudo">
+            <h1 id="fazendo-alterações-no-repositório">Fazendo alterações no repositório</h1>
+
+<p>Você já deve ter um repositório em sua maquina. As atualizações vão acontecer normalmente e vamos precisar registrar essas mudanças quando achar que seja o momento.</p>
+
+<p>Cada arquivo do seu repositório pode estar em dois estados: tracked e untracked. Quando o arquivo está tracked quer dizer que ele já tem uma versão registrada no Git. Quando o arquivo está untracked quer dizer que o Git não conhece esse arquivo.</p>
+
+<p>Assim que você fizer suas edições nos arquivos, o Git identifica como arquivos modificados.</p>
+
+<h2 id="conferindo-o-estado-dos-arquivos">Conferindo o estado dos arquivos</h2>
+
+<p>Use o comando git status para ver os estado dos arquivos.</p>
+
+<h2 id="rastreando-novos-arquivos">Rastreando novos arquivos</h2>
+
+<p>Para começar a registrar novos arquivos digite:</p>
+
+<p>git add nome.txt</p>
+
+<p>Esse comando irá adicionar o arquivo nome.txt ao repositório.</p>
+
+<p>ou:</p>
+
+<p>git add *</p>
+
+<p>Esse ultimo adiciona todos os arquivos ao repositório.</p>
+
+<h2 id="preparando-arquivos-modificados">Preparando arquivos modificados</h2>
+
+<p>Se você editar um arquivo que está sendo rastreado pelo Git e fizer o comando git status, irá ver que o Git identifica esse arquivo como modificado e não preparado para confirmação (commit).</p>
+
+<p>Para preparar esse arquivo é só fazer o comando git add igual quando fazemos para rastrear novos arquivos. Após esse comando verifique com git status.</p>
+
+<p>O arquivo editado agora está preparado para fazer o commit.</p>
+
+<h2 id="ignorando-arquivos">Ignorando arquivos</h2>
+
+<p>Vamos ter arquivos que não vai fazer sentido serem rastreados pelo Git. Talvez seja arquivos criados automaticamente por uma IDE ou outra coisa. Nesse caso precisamos criar um arquivo chamado .gitignore.</p>
+
+<p>Crie um arquivo chamado .gitignore e adicione os nomes dos arquivos. Criar esse arquivo antes de iniciar o repositório é uma boa ideia, pode evitar que um commit com arquivos desnecessários seja feito.</p>
+
+<h2 id="confirmando-as-edições">Confirmando as edições</h2>
+
+<p>Depois de colocar os arquivos na área de preparação, podemos fazer o nosso commit.</p>
+
+<p>git commit -m ‘mensagem de confirmação’</p>
+
+<p>A mensagem de confirmação é um texto descritivo do commit, escolha algo que faça sentido para essa confirmação.</p>
+
+<h2 id="ignorando-a-preparação">Ignorando a preparação</h2>
+
+<p>É possível evitar fazer o git add e ir direto para o git commit, mas isso só funciona para os arquivos que já são rastreados pelo Git. É só adicionar a opção -a.</p>
+
+<p>git commit -a -m ‘mensagem de confirmação’</p>
+
+<h2 id="removendo-arquivos">Removendo arquivos</h2>
+
+<p>Se tiver arquivos que não deseja mais, o comando git rm é a solução ideal. Esse comando também remove o arquivo do seu diretório (sua pasta).</p>
+
+<p>git rm nome.txt</p>
+
+<p>O comando acima irá remover o arquivo nome.txt.</p>
+
+<p>Lembre de fazer a confirmação depois.</p>
+
+<p>Eu sou RafaMarqS… Até a próxima.</p>
+
+        </div>
+
+        <footer class="text-center">
+            <b>Desenvolvido por RafaMarqS Technologies</b>
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

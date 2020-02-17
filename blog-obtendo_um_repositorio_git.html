@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="icon" href="m_claro.png" type="image/x-icon">
-        <title>Início - RafaMarqS</title>
+        <title>Obtendo um repositório Git - RafaMarqS</title>
 
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -47,44 +47,49 @@
         </nav>
 
         <div class="conteudo">
-            <div class="list-group">
-    <a href="blog-controle_de_versao.html" class="list-group-item list-group-item-action">
-        Git - Controle de Versão
-    </a>
-    <a href="blog-instalando_o_git.html" class="list-group-item list-group-item-action">
-        Git - Instalando
-    </a>
-    <a href="blog-configuracao_inicial_do_git.html" class="list-group-item list-group-item-action">
-        Git - Configuração inicial
-    </a>
-    <a href="blog-obtendo_um_repositorio_git.html" class="list-group-item list-group-item-action">
-        Git - Obtendo um repositorio
-    </a>
-    <a href="blog-fazendo_alteracoes_no_repositorio.html" class="list-group-item list-group-item-action">
-        Git - Fazendo alterações no repositorio
-    </a>
-    <a href="blog-historico_de_commits.html" class="list-group-item list-group-item-action">
-        Git - Histórico de commits
-    </a>
-    <a href="blog-desfazendo_algo.html" class="list-group-item list-group-item-action">
-        Git - Desfazendo algo
-    </a>
-    <a href="blog-commit_com_quase_todos_os_arquivos.html" class="list-group-item list-group-item-action">
-        Git - Commit com quase todos os arquivos
-    </a>
-    <a href="blog-desfazendo_modificacoes_no_arquivo.html" class="list-group-item list-group-item-action">
-        Git - Desfazendo modificações no arquivo
-    </a>
-    <a href="blog-tags.html" class="list-group-item list-group-item-action">
-        Git - Tags
-    </a>
-    <a href="blog-ramos.html" class="list-group-item list-group-item-action">
-        Git - Ramos
-    </a>
-    <a href="blog-ramificacao_e_mesclagem.html" class="list-group-item list-group-item-action">
-        Git - Ramificação e mesclagem
-    </a>
-</div>
+            <h1 id="obtendo-um-repositório-git">Obtendo um repositório Git</h1>
+
+<p>Chegou o momento de ter um repositório Git, podemos fazer isso facilmente de duas formas. Podemos iniciar um repositório, preparando nossos arquivos. Podemos também clonar um repositório que existe em outro lugar.</p>
+
+<h2 id="iniciando-um-repositório-git">Iniciando um repositório Git</h2>
+
+<p>Se você já tem algum diretório (pasta) que quer ter um controle de versão, primeiro precisamos ir até esse diretório. Dentro dessa pasta podemos clicar com o botão direito e abrir o Git Bash ou o Terminal.</p>
+
+<p>E digite:</p>
+
+<p>git init</p>
+
+<p>Pronto! Iniciamos um repositório Git, mas calma, ainda não está sendo rastreado. Para começar precisamos adicionar os arquivos que queremos, como estamos começando, vamos adicionar todos.</p>
+
+<p>Digite:</p>
+
+<p>git add *</p>
+
+<p>isso adiciona todos os arquivos na area de preparação do Git, ainda precisamos fazer um um commit que é adicionar os arquivos no formato em que estão na area de preparação.</p>
+
+<p>Digite:</p>
+
+<p>git commit -m ‘iniciando controle de versão’</p>
+
+<p>Pronto! Já temos tudo o que precisamos até o momento.</p>
+
+<h2 id="clonando-um-repositório-git">Clonando um repositório Git</h2>
+
+<p>Podemos obter uma cópia completa de um repositório Git que existe em outro lugar.</p>
+
+<p>Por ser uma cópia completa, é possível que a sua cópia possa depois servir como cópia de segurança e ser usada para recuperar os dados caso aconteça algum problema no servidor.</p>
+
+<p>Para clonar usamos o comando git clone, vamos começar com um repositório bem popular, o bootstrap, que é um framework web</p>
+
+<p>Vá para o diretório onde deseja que esse repositório esteja.</p>
+
+<p>Digite:</p>
+
+<p>git clone https://github.com/twbs/bootstrap.git</p>
+
+<p>Agora você possui um repositório completo do bootstrap.</p>
+
+<p>Eu sou RafaMarqS… Até a próxima.</p>
 
         </div>
 

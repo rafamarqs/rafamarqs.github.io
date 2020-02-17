@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="icon" href="m_claro.png" type="image/x-icon">
-        <title>Início - RafaMarqS</title>
+        <title>Ramos - RafaMarqS</title>
 
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -47,44 +47,38 @@
         </nav>
 
         <div class="conteudo">
-            <div class="list-group">
-    <a href="blog-controle_de_versao.html" class="list-group-item list-group-item-action">
-        Git - Controle de Versão
-    </a>
-    <a href="blog-instalando_o_git.html" class="list-group-item list-group-item-action">
-        Git - Instalando
-    </a>
-    <a href="blog-configuracao_inicial_do_git.html" class="list-group-item list-group-item-action">
-        Git - Configuração inicial
-    </a>
-    <a href="blog-obtendo_um_repositorio_git.html" class="list-group-item list-group-item-action">
-        Git - Obtendo um repositorio
-    </a>
-    <a href="blog-fazendo_alteracoes_no_repositorio.html" class="list-group-item list-group-item-action">
-        Git - Fazendo alterações no repositorio
-    </a>
-    <a href="blog-historico_de_commits.html" class="list-group-item list-group-item-action">
-        Git - Histórico de commits
-    </a>
-    <a href="blog-desfazendo_algo.html" class="list-group-item list-group-item-action">
-        Git - Desfazendo algo
-    </a>
-    <a href="blog-commit_com_quase_todos_os_arquivos.html" class="list-group-item list-group-item-action">
-        Git - Commit com quase todos os arquivos
-    </a>
-    <a href="blog-desfazendo_modificacoes_no_arquivo.html" class="list-group-item list-group-item-action">
-        Git - Desfazendo modificações no arquivo
-    </a>
-    <a href="blog-tags.html" class="list-group-item list-group-item-action">
-        Git - Tags
-    </a>
-    <a href="blog-ramos.html" class="list-group-item list-group-item-action">
-        Git - Ramos
-    </a>
-    <a href="blog-ramificacao_e_mesclagem.html" class="list-group-item list-group-item-action">
-        Git - Ramificação e mesclagem
-    </a>
-</div>
+            <h1 id="ramos">Ramos</h1>
+
+<p>Se já teve vontade de testar algo mas sem riscos de perder o que já fez, a solução é criar um novo ramo. O novo ramo é totalmente separado do ramo principal.</p>
+
+<p>Sem duvida é um dos recursos mais importantes do git. A forma do git criar um novo ramo é muito leve, sendo bem rápido. Criar novos ramos é recomendável e depois de prontos você pode fundir de volta ao principal, e isso pode ser feito diversas vezes no mesmo dia.</p>
+
+<p>Dominar esse recurso vai mudar toda sua forma de desenvolver seus projetos.</p>
+
+<h2 id="resumindo">Resumindo</h2>
+
+<p>Antes de mais detalhes sobre ramos, vamos voltar ao modo de como o git armazena seus dados.</p>
+
+<p>Quando um commit é feito, o git armazena um objeto de confirmação que tem um ponteiro para os arquivos que você preparou. Esse objeto tem o nome, e-mail, a mensagem e os ponteiros para o commit.</p>
+
+<h2 id="criando-um-ramo">Criando um ramo</h2>
+
+<p>O que acontece quando um novo ramo é feito? Isso cria um novo ponteiro para você se movimentar.</p>
+
+<p>Se quiser criar um ramo de teste:
+git branch teste</p>
+
+<p>Isso cria um novo ponteiro para o mesmo commit em que está.</p>
+
+<p>E como o git sabe qual ponteiro usar? Ele tem um ponteiro extra chamado HEAD que aponta para o ponteiro.</p>
+
+<h2 id="indo-para-outro-ramo">Indo para outro ramo</h2>
+
+<p>Se quiser ir para outro ramo é só executar:</p>
+
+<p>git checkout nomeDoRamo</p>
+
+<p>Eu sou RafaMarqS… Até a próxima.</p>
 
         </div>
 
